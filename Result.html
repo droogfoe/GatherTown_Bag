@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Result</h1>
+        
     </head>
     <body>
+        <h1 id="resultText">Find the cue!!</h1>
         <script>
             var result = localStorage.getItem('result');
             if(result == null)
@@ -12,6 +13,7 @@
             }
             else
             {
+                document.getElementById("resultText").innerHTML = result;
                 console.log(result);
             }
         </script>
