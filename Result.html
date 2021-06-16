@@ -2,9 +2,18 @@
 <html>
     <head>
         <h1>Result</h1>
-        <script src="property.js"></script>
     </head>
     <body>
-        <p>Result</p>
+        <script>
+            var result = localStorage.getItem('result');
+            if(result == null)
+            {
+                console.log("Null result.");
+            }
+            else
+            {
+                console.log(result);
+            }
+        </script>
     </body>
 </html>
