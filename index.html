@@ -1,8 +1,63 @@
 <!DOCTYPE html>
     <html>
-        <body>
-            <h1>Hello World</h1>
-            <p>I'm hosted with GitHub Pages.</p>
-            <img src ="asset/gura.gif"></src>
+        <head>
+            <style>
+                .relative{
+                    position: relative;
+                    width: 800px;
+                    height: 800px;
+                }
+                .absolute{
+                    position: absolute;
+                    top: 200px;
+                    right: 20%;
+                    left: 15%;
+                    width: 600px;
+                    height: 800px;
+                    align-content: center;
+                }
+                .center {
+                    text-align: center;
+                }
+                .opacity{
+                    opacity: 0.5;
+                }
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: rgba(255, 255, 255, 0.075);
+                    padding: 10px;
+                }
+                .grid-item {
+                    background-color: rgba(255, 255, 255, 0.315);
+                    border: 1px solid rgba(0, 0, 0, 0.8);
+                    padding: 90px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body background="coral">
+            <div class="center">
+                <h1>Hello World</h1>
+                <p>I'm hosted with GitHub Pages.</p>
+                <div class="relative">
+                    <img src ="asset/BackPack.png" width=100% class="opacity"></src>
+                </div>
+                <div class="absolute">
+                    <div class="grid-container">
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>  
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>  
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>  
+                    </div>
+                </div>
+                <img src ="asset/gura.gif">
+            </div>
         </body>
 </html>
